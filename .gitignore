@@ -1,0 +1,86 @@
+# === Python & Bytecode ===
+__pycache__/
+*.py[cod]
+*$py.class
+
+# === Conda & Virtual Environments ===
+# Игнорируем папку с окружением, если вы создали её внутри проекта
+.venv/
+env/
+venv/
+ENV/
+*_venv/
+
+# === Jupyter Notebooks ===
+# Временные контрольные точки ноутбуков (обязательно игнорировать!)
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# === IDE (Cursor / VS Code) ===
+.vscode/
+.idea/
+
+# === Data (Данные) ===
+# Никогда не храните сырые данные в Git!
+data/
+datasets/
+*.csv
+*.tsv
+*.json
+*.xml
+*.parquet
+*.h5
+*.hdf5
+
+# === Models (Веса моделей) ===
+# Файлы моделей обычно тяжелые
+*.pkl
+*.pickle
+*.pt        # PyTorch models
+*.pth       # PyTorch weights
+*.onnx
+
+# === Logs & Temp ===
+*.log
+logs/
+tmp/
+cache/
+
+# Байт-код и кэши
+__pycache__/
+*.pyc
+
+# === Windows System Files ===
+Thumbs.db
+Desktop.ini
+
+# Настройки редакторов (VS Code, Antigravity и т.д.)
+.vscode/
+.idea/
+.DS_Store
+*.backup
+
+# Windows System Garbage
+*:Zone.Identifier
+*Zone.Identifier
+
+# Игнорировать сами данные, но оставлять структуру папок
+data/
+!data/.gitkeep
+
+# Игнорировать модели (они могут быть >100МБ)
+models/*.pkl
+models/*.model
+*.h5
+
+# Игнорировать картинки отчетов
+reports/
+figures/
+
+# Системные
+.DS_Store
+.ipynb_checkpoints/
+.temp
+.TEMP
+.tmp
+.TMP

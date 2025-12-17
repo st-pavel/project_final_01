@@ -1,0 +1,25 @@
+# --- Core ---
+numpy>=2.0.0
+pandas>=2.3.0
+scikit-learn
+scipy
+
+# --- GPU (RAPIDS) ---
+# Для установки нужны спец. аргументы pip, см. README
+cudf-cu12
+cuml-cu12
+cupy-cuda12x
+
+# === Recommender Systems ===
+lightfm>=1.17       
+nmslib              # Пробуем без версии, это сложная библиотека
+
+# === UI & Viz ===
+matplotlib-inline
+plotly>=5.12.0
+streamlit>=1.20.0
+tqdm>=4.64.0
+packaging
+
+# === CPU Acceleration (Fallback) ===
+scikit-learn-intelex
