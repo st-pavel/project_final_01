@@ -3,6 +3,8 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+*.py
+
 # === Conda & Virtual Environments ===
 # Игнорируем папку с окружением, если вы создали её внутри проекта
 .venv/
