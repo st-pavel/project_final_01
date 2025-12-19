@@ -47,6 +47,7 @@ datasets/
 logs/
 tmp/
 cache/
+catboost_info/
 
 # Байт-код и кэши
 __pycache__/
