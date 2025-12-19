@@ -38,16 +38,3 @@
 
 **Примечание**: Решение опирается на собственные вычисления, но учитывает референсные подходы для обеспечения качества.
 
-
-
-
-# === GPU Acceleration (RAPIDS) ===
-# Для установки потребуется --extra-index-url https://pypi.nvidia.com
-cudf-cu12
-cuml-cu12
-cupy-cuda12x
-
-# === CPU Acceleration (Fallback) ===
-scikit-learn-intelex
-
-Важно: для установки этих библиотек нужна команда с --extra-index-url, иначе pip не найдет пакеты cudf.
