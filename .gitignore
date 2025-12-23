@@ -3,8 +3,6 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-*.py
-
 # === Conda & Virtual Environments ===
 # Игнорируем папку с окружением, если вы создали её внутри проекта
 .venv/
@@ -33,6 +31,8 @@ datasets/
 *.parquet
 *.h5
 *.hdf5
+*.html
+!index.html
 
 # === Models (Веса моделей) ===
 # Файлы моделей обычно тяжелые
@@ -87,3 +87,6 @@ figures/
 .TEMP
 .tmp
 .TMP
+catboost_info/
+project_final_html.html
+.venv/

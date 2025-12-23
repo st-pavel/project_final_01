@@ -1,25 +1,38 @@
-# --- Core ---
-numpy>=2.0.0
-pandas>=2.3.0
-scikit-learn
+# --- Jupyter & Core ---
+ipykernel
+notebook
+
+# --- Data Manipulation ---
+numpy
+pandas
 scipy
+joblib
 
-# --- GPU (RAPIDS) ---
-# Для установки нужны спец. аргументы pip, см. README
-cudf-cu12
-cuml-cu12
-cupy-cuda12x
+# --- Visualization ---
+matplotlib
+seaborn
+plotly
+dtale
 
-# === Recommender Systems ===
-lightfm>=1.17       
-nmslib              # Пробуем без версии, это сложная библиотека
+# --- Machine Learning & Stats ---
+scikit-learn
+statsmodels
+scikit-posthocs
+category_encoders
+pgeocode
+optuna
 
-# === UI & Viz ===
-matplotlib-inline
-plotly>=5.12.0
-streamlit>=1.20.0
-tqdm>=4.64.0
-packaging
-
-# === CPU Acceleration (Fallback) ===
+# --- Intel Acceleration (CPU) ---
 scikit-learn-intelex
+
+# --- Gradient Boosting ---
+xgboost
+catboost
+
+# --- Deep Learning (Torch) ---
+# Примечание: PyTorch лучше ставить отдельной командой для GPU - ДО установки всех библиотек.
+# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+# если не требуется GPU в проекте, то можно следующие 3 библиотеки не ставить.
+torch
+torchvision
+torchaudio
