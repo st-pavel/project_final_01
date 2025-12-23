@@ -102,6 +102,11 @@ git clone https://github.com/st-pavel/project_final_01.git
 ```
 
 Установите зависимости:
+# Примечание: Если вы используете GPU (NVIDIA) то PyTorch лучше ставить отдельной командой для GPU - ДО установки всех библиотек.
+``` Bash
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+```
+и потом 
 ``` Bash
 pip install -r requirements.txt
 ```
