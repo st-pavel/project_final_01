@@ -43,8 +43,6 @@ datasets/
 *.onnx
 
 # === Logs & Temp ===
-*.log
-logs/
 tmp/
 cache/
 catboost_info/
@@ -72,7 +70,7 @@ data/
 !data/.gitkeep
 
 # Игнорировать модели (они могут быть >100МБ)
-models/*.pkl
+#models/*.pkl
 models/*.model
 *.h5
 

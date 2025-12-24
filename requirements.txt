@@ -1,38 +1,18 @@
-# --- Jupyter & Core ---
-ipykernel
-notebook
-
-# --- Data Manipulation ---
-numpy
-pandas
-scipy
-joblib
-
-# --- Visualization ---
-matplotlib
-seaborn
-plotly
-dtale
-
-# --- Machine Learning & Stats ---
-scikit-learn
-statsmodels
-scikit-posthocs
-category_encoders
-pgeocode
-optuna
-
-# --- Intel Acceleration (CPU) ---
-scikit-learn-intelex
-
-# --- Gradient Boosting ---
-xgboost
-catboost
-
-# --- Deep Learning (Torch) ---
-# Примечание: PyTorch лучше ставить отдельной командой для GPU - ДО установки всех библиотек.
-# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
-# если не требуется GPU в проекте, то можно следующие 3 библиотеки не ставить.
-torch
-torchvision
-torchaudio
+catboost==1.2.8
+category-encoders==2.6.3
+dtale==3.18.2
+ipywidgets==8.1.8
+joblib==1.5.3
+matplotlib==3.10.8
+numpy==2.3.5
+optuna==4.6.0
+pandas==2.3.3
+pgeocode==0.5.0
+plotly==6.5.0
+scikit-learn==1.5.2
+scikit-learn-intelex==2025.10.0
+scikit-posthocs==0.11.4
+scipy==1.15.3
+seaborn==0.13.2
+statsmodels==0.14.6
+xgboost==3.1.2

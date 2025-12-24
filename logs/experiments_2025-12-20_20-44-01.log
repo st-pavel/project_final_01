@@ -1,0 +1,92 @@
+2025-12-20 20:44:01 - INFO - Старт
+2025-12-20 20:45:26 - WARNING - No such comm: 037cfd6359724510906e29a4af1e03ea
+2025-12-20 20:45:28 - INFO - sklearn.model_selection.train_test_split: fallback to original Scikit-learn
+2025-12-20 20:45:30 - INFO - sklearn.model_selection.train_test_split: running accelerated version on CPU
+2025-12-20 20:45:38 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
+2025-12-20 20:46:08 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
+2025-12-20 20:46:27 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
+2025-12-20 20:46:33 - INFO - sklearn.linear_model.LinearRegression.fit: running accelerated version on CPU
+2025-12-20 20:46:33 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
+2025-12-20 20:47:28 - INFO - sklearn.linear_model.LinearRegression.predict: running accelerated version on CPU
+2025-12-20 20:47:28 - INFO - sklearn.linear_model.LinearRegression.predict: running accelerated version on CPU
+2025-12-20 20:47:29 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
+2025-12-20 20:47:29 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
+2025-12-20 20:47:29 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
+2025-12-20 20:47:29 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
+2025-12-20 20:47:29 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
+2025-12-20 20:47:29 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
+2025-12-20 20:47:29 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
+2025-12-20 20:47:29 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
+2025-12-20 20:47:29 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
+2025-12-20 20:47:29 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
+2025-12-20 20:47:29 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
+2025-12-20 20:47:29 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
+2025-12-20 20:47:29 - INFO - 
+=================================================================
+MODEL: LinearRegression (baseline)
+-----------------------------------------------------------------
+Metric     |                Train |                 Test
+-----------------------------------------------------------------
+MAE        |           190,571.26 |           194,434.30
+MSE        |      102,269,241,187 |      105,629,167,335
+R2         |               0.5656 |               0.5450
+=================================================================
+
+2025-12-20 20:47:29 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
+2025-12-20 20:47:29 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
+2025-12-20 20:47:29 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
+2025-12-20 20:47:30 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
+2025-12-20 20:47:34 - INFO - sklearn.linear_model.LinearRegression.fit: running accelerated version on CPU
+2025-12-20 20:47:34 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
+2025-12-20 20:47:34 - INFO - sklearn.linear_model.LinearRegression.predict: running accelerated version on CPU
+2025-12-20 20:47:34 - INFO - sklearn.linear_model.LinearRegression.predict: running accelerated version on CPU
+2025-12-20 20:47:34 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
+2025-12-20 20:47:34 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
+2025-12-20 20:47:34 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
+2025-12-20 20:47:34 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
+2025-12-20 20:47:34 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
+2025-12-20 20:47:34 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
+2025-12-20 20:47:34 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
+2025-12-20 20:47:34 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
+2025-12-20 20:47:34 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
+2025-12-20 20:47:34 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
+2025-12-20 20:47:34 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
+2025-12-20 20:47:34 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
+2025-12-20 20:47:34 - INFO - 
+=================================================================
+MODEL: LinearRegression (best_features = 25)
+-----------------------------------------------------------------
+Metric     |                Train |                 Test
+-----------------------------------------------------------------
+MAE        |           268,095.79 |           266,898.80
+MSE        |      172,999,933,821 |      170,021,961,433
+R2         |               0.2652 |               0.2677
+=================================================================
+
+2025-12-20 20:47:34 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
+2025-12-20 20:47:36 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
+2025-12-20 20:47:36 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
+2025-12-20 20:47:36 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
+2025-12-20 20:47:36 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
+2025-12-20 20:47:36 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
+2025-12-20 20:47:36 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
+2025-12-20 20:47:36 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
+2025-12-20 20:47:36 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
+2025-12-20 20:47:36 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
+2025-12-20 20:47:36 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
+2025-12-20 20:47:36 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
+2025-12-20 20:47:36 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
+2025-12-20 20:47:36 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
+2025-12-20 20:47:36 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
+2025-12-20 20:47:36 - INFO - 
+=================================================================
+MODEL: DecisionTreeRegressor (Top-25 features)
+-----------------------------------------------------------------
+Metric     |                Train |                 Test
+-----------------------------------------------------------------
+MAE        |            76,101.99 |           170,214.23
+MSE        |       36,410,785,246 |      112,175,926,935
+R2         |               0.8453 |               0.5168
+=================================================================
+
+2025-12-20 20:47:42 - INFO - sklearn.utils.validation._assert_all_finite: running accelerated version on CPU
