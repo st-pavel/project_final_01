@@ -29,6 +29,7 @@ data.csv
 !data/data.csv.zip
 !data/.gitkeep
 *.csv
+*.csv#
 *.tsv
 *.json
 *.xml
@@ -61,6 +62,7 @@ stacking_triple_xgboost.pkl
 tmp/
 cache/
 catboost_info/
+.~lock.*
 
 # Байт-код и кэши
 __pycache__/
