@@ -10,6 +10,7 @@ env/
 venv/
 ENV/
 *_venv/
+.venv/
 
 # === Jupyter Notebooks ===
 # Временные контрольные точки ноутбуков (обязательно игнорировать!)
@@ -22,8 +23,11 @@ ENV/
 
 # === Data (Данные) ===
 # Никогда не храните сырые данные в Git!
-data/
-datasets/
+#!data/data.csv.zip
+data/*
+data.csv
+!data/data.csv.zip
+!data/.gitkeep
 *.csv
 *.tsv
 *.json
@@ -34,13 +38,24 @@ datasets/
 *.html
 !index.html
 
+project_final_html.html
+!logs/results_release.csv
+!brief_prediction.pdf
+!project_final_html.zip
+!project_final.ipynb
+!requirements.txt
+!runtime.txt
+!LICENSE
+!README.md
+
 # === Models (Веса моделей) ===
 # Файлы моделей обычно тяжелые
-*.pkl
+#*.pkl
 *.pickle
 *.pt        # PyTorch models
 *.pth       # PyTorch weights
 *.onnx
+stacking_triple_xgboost.pkl
 
 # === Logs & Temp ===
 tmp/
@@ -65,9 +80,6 @@ Desktop.ini
 *:Zone.Identifier
 *Zone.Identifier
 
-# Игнорировать сами данные, но оставлять структуру папок
-data/
-!data/.gitkeep
 
 # Игнорировать модели (они могут быть >100МБ)
 #models/*.pkl
@@ -86,5 +98,4 @@ figures/
 .tmp
 .TMP
 catboost_info/
-project_final_html.html
-.venv/
+
