@@ -80,7 +80,10 @@
 │   ├── app.py
 │   ├── client.py
 │   ├── Dockerfile
-│   └── requirements.txt
+│   ├── google_apps_script.js
+│   ├── model_input_examples.csv
+│   ├── requirements.txt
+│   └── tuned_xgboost.pkl
 ├── logs/                  # История экспериментов и метрик (.log, .csv)
 ├── models/                # Сериализованные модели (.pkl)
 ├── project_final.ipynb    # ⭐️ Основной ноутбук с решением
@@ -191,7 +194,6 @@ API принимает JSON-запросы по адресу http://localhost:50
 1. Создайте новую таблицу и импортируйте заголовки из `deployment/model_input_examples.csv`.
 2. Скопируйте код из файла [`deployment/google_apps_script.js`](./deployment/google_apps_script.js).
 3. Вставьте его в редактор скриптов таблицы.
-
 
 ---
 
