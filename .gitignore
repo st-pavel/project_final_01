@@ -1,105 +1,107 @@
-# === Python & Bytecode ===
+# ==========================================
+# 1. СИСТЕМНЫЕ ФАЙЛЫ И IDE
+# ==========================================
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+*.swp
+*Zone.Identifier
+
+# ==========================================
+# 2. PYTHON И ОКРУЖЕНИЕ
+# ==========================================
 __pycache__/
 *.py[cod]
 *$py.class
-
-# === Conda & Virtual Environments ===
-# Игнорируем папку с окружением, если вы создали её внутри проекта
 .venv/
-env/
 venv/
+env/
 ENV/
-*_venv/
-.venv/
 
-# === Jupyter Notebooks ===
-# Временные контрольные точки ноутбуков (обязательно игнорировать!)
+# ==========================================
+# 3. JUPYTER NOTEBOOKS
+# ==========================================
 .ipynb_checkpoints/
 */.ipynb_checkpoints/
+# Папка, которую создает CatBoost при обучении
+catboost_info/
 
-# === IDE (Cursor / VS Code) ===
-.vscode/
-.idea/
-
-# === Data (Данные) ===
-# Никогда не храните сырые данные в Git!
-#!data/data.csv.zip
+# ==========================================
+# 4. ДАННЫЕ (DATA)
+# ==========================================
+# Игнорируем всё в папке data...
 data/*
-data.csv
+# ...кроме самого архива (он нужен для работы)
 !data/data.csv.zip
+# ...и файла-маркера (если есть)
 !data/.gitkeep
-*.csv
-*.csv#
-*.tsv
-*.json
-*.xml
-*.parquet
-*.h5
-*.hdf5
-*.html
-!index.html
 
-project_final_html.html
-!logs/results_release.csv
+# Игнорируем распакованные данные в корне (если случайно распаковали)
+data.csv
+
+# ==========================================
+# 5. МОДЕЛИ (MODELS)
+# ==========================================
+# Игнорируем тяжелые веса моделей
+models/*
+*.pkl
+*.pickle
+*.h5
+*.pt
+*.pth
+*.onnx
+histgradientboosting.pkl
+stacking_rf_catboost_ridge.pkl
+stacking_rf_histgb_ridge.pkl
+stacking_triple_xgboost.pkl
+
+# ВАЖНО: Разрешаем (White-list) конкретную модель для деплоя
+# (Убедитесь, что она < 100 МБ)
 !deployment/tuned_xgboost.pkl
-!deployment/model_input_examples.csv
-!brief_prediction.pdf
+!models/tuned_xgboost.pkl
+
+# ==========================================
+# 6. ЛОГИ И ВРЕМЕННЫЕ ФАЙЛЫ
+# ==========================================
+# Игнорируем все логи...
+logs/*
+# ...кроме финального отчета с результатами
+!logs/results_release.csv
+
+# Временные файлы LibreOffice/Excel (когда файл открыт)
+.~lock.*
+tmp/
+cache/
+
+# ==========================================
+# 7. ОТЧЕТЫ И ГРАФИКИ
+# ==========================================
+# Игнорируем HTML отчеты (они тяжелые)
+*.html
+# Но оставляем ZIP-архив с отчетом
 !project_final_html.zip
+
+# ==========================================
+# 8. РАЗНОЕ (Глобальный игнор мусора)
+# ==========================================
+# Игнорируем CSV везде, чтобы не засорять репо...
+*.csv
+# ...НО разрешаем нужные нам конфигурационные CSV
+!deployment/model_input_examples.csv
+!logs/results_release.csv
+!assets/*.csv
+
+# PDF оставляем (ТЗ)
+!brief_prediction.pdf
+
+# ==========================================
+# 9. КОРНЕВЫЕ ФАЙЛЫ (Явное разрешение)
+# ==========================================
+# На всякий случай явно разрешаем ключевые файлы
 !project_final.ipynb
 !requirements.txt
 !runtime.txt
-!LICENSE
 !README.md
-
-# === Models (Веса моделей) ===
-# Файлы моделей обычно тяжелые
-#*.pkl
-*.pickle
-*.pt        # PyTorch models
-*.pth       # PyTorch weights
-*.onnx
-stacking_triple_xgboost.pkl
-
-# === Logs & Temp ===
-tmp/
-cache/
-catboost_info/
-.~lock.*
-
-# Байт-код и кэши
-__pycache__/
-*.pyc
-
-# === Windows System Files ===
-Thumbs.db
-Desktop.ini
-
-# Настройки редакторов (VS Code, Antigravity и т.д.)
-.vscode/
-.idea/
-.DS_Store
-*.backup
-
-# Windows System Garbage
-*:Zone.Identifier
-*Zone.Identifier
-
-
-# Игнорировать модели (они могут быть >100МБ)
-#models/*.pkl
-models/*.model
-*.h5
-
-# Игнорировать картинки отчетов
-reports/
-figures/
-
-# Системные
-.DS_Store
-.ipynb_checkpoints/
-.temp
-.TEMP
-.tmp
-.TMP
-catboost_info/
-
+!LICENSE
