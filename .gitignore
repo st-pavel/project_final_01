@@ -41,6 +41,8 @@ data.csv
 
 project_final_html.html
 !logs/results_release.csv
+!deployment/tuned_xgboost.pkl
+!deployment/model_input_examples.csv
 !brief_prediction.pdf
 !project_final_html.zip
 !project_final.ipynb
